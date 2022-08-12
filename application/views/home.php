@@ -304,7 +304,7 @@
                 <tr class="kotak1">
                     <?php for ($j = 1; $j <= 5; $j++) : ?>
                         <td class="kotak2">
-                            <a href="<?php echo base_url('index.php/CItem') ?>">
+                            <a href="<?php echo base_url('CItem') ?>">
                                 <img class="image" src='<?php echo base_url() ?>assets/sampel.png'>
                             </a>
                             <br>

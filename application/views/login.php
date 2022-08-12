@@ -41,7 +41,7 @@
 
     .logo-tengah {
         margin-top: 50px;
-        margin-left: 300px;
+        margin-left: 40%;
         width: 270px;
         /* border: 1px solid black; */
     }
@@ -51,7 +51,7 @@
         font-family: Maiandra GD;
         color: white;
         font-weight: bolder;
-        margin-left: 310px;
+        margin-left: 41%;
         margin-top: -40px;
     }
 
@@ -60,7 +60,7 @@
         font-family: Maiandra GD;
         color: white;
         font-weight: bolder;
-        margin-left: 140px;
+        margin-left: 110px;
         margin-top: -50px;
         text-align: center;
     }
@@ -134,10 +134,26 @@
         margin-top: 40px;
         color: red;
     }
+
+    @media (max-width:1100px) {
+        .blok-loginlogo {
+            width: 570px;
+        }
+
+        .maubelanja {
+            margin-left: 150px;
+        }
+    }
+
+    @media (max-width:1300px) {
+        .maubelanja {
+            margin-left: 140px;
+        }
+    }
 </style>
 
 <div>
-    <a href="<?php echo base_url() ?>index.php/CHome">
+    <a href="<?php echo base_url() ?>CHome">
         <img class="logo-atas" src="<?php echo base_url() ?>assets/sape.png" width="50px" alt="">
         <p class="namalogo-atas"><b>Shapee</b>
     </a>
@@ -151,7 +167,7 @@
         <p class="maubelanja"> Mau Belanja Online ? <br>
             Ya di Shapee aja</p>
     </div>
-    <div class="blok-form">
+    <form class="blok-form">
         <div class="form-login">
             <P class="login"> Log in </P>
             <div class="kolom1">
@@ -164,8 +180,8 @@
                 <p class="login-button"><b>LOG IN</b></p>
             </div>
             <p class="lupa-pass">Lupa Password ? </p>
-            <P class="daftar"><u><b><a href="<?php echo base_url('index.php/CDaftar') ?>">Daftar</a></b></u></P>
+            <P class="daftar"><u><b><a href="<?php echo base_url('CDaftar') ?>">Daftar</a></b></u></P>
         </div>
-    </div>
+    </form>
 
 </div>

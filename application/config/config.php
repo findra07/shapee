@@ -35,7 +35,7 @@ $config['base_url'] = 'http://localhost/shapee/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'http://localhost/shapee/';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------

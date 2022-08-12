@@ -293,14 +293,14 @@
                     <a href="" class="fas fa-bell"></a> Notifikasi
                     <a href="" class="fas fa-info-circle"></a> Bantuan
                     <a href="" class="fas fa-globe"></a> Bahasa <a href="" class="fas fa-angle-down"></a>
-                    Daftar | <a class="klik-login" href="<?php echo base_url('index.php/CLogin') ?>">Login</a>
+                    Daftar | <a class="klik-login" href="<?php echo base_url('CLogin') ?>">Login</a>
                 </div>
             </div>
 
         </div>
         <div class="blok-bawah">
             <div class="blok-logo">
-                <a href="<?php echo base_url() ?>index.php/CHome">
+                <a href="<?php echo base_url() ?>CHome">
                     <img class="img-logo" src="<?php echo base_url() ?>assets/sape.png" height="2px" alt="">
                     <div class="blok-brand">
                         <p class="nama-brand">
