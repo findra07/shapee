@@ -67,10 +67,10 @@
 
     .form-daftar {
         width: 400px;
-        height: 350px;
+        height: 400px;
         border: 1px solid white;
         border-radius: 10px;
-        margin-top: 100px;
+        margin-top: 75px;
         background-color: white;
     }
 
@@ -92,6 +92,8 @@
         padding-left: 10px;
         font-size: 15px;
         font-family: Maiandra GD;
+        font-style: italic;
+        /* opacity: 50%; */
     }
 
     .kolom3 {
@@ -168,16 +170,17 @@
             Ya di Shapee aja</p>
     </div>
     <div class="blok-form">
-        <div class="form-daftar">
+        <form class="form-daftar">
             <P class="daftar"> Daftar </P>
-            <input class="kolom1" type="text">
+            <input class="kolom1" type="text" placeholder="username ..." required="">
+            <input class="kolom1" type="text" placeholder="password ..." required="">
             <input class="kolom3" type="submit" value="SIMPAN">
 
             <!-- <div class="kolom3">
                 <p class="daftar-button"><b>SIMPAN</b></p>
             </div> -->
-            <P class="to-login"><u><b><a href="<?php echo base_url('CLogin') ?>">Log in</a></b></u></P>
-        </div>
+            <P class="to-login">ke halaman <u><b><a href="<?php echo base_url('CLogin') ?>">Log in</a></b></u></P>
+        </form>
     </div>
 
 </div>

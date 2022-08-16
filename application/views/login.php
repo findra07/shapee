@@ -167,7 +167,7 @@
         <p class="maubelanja"> Mau Belanja Online ? <br>
             Ya di Shapee aja</p>
     </div>
-    <form class="blok-form">
+    <form class="blok-form" action="" method="POST">
         <div class="form-login">
             <P class="login"> Log in </P>
             <div class="kolom1">
@@ -180,7 +180,7 @@
                 <p class="login-button"><b>LOG IN</b></p>
             </div>
             <p class="lupa-pass">Lupa Password ? </p>
-            <P class="daftar"><u><b><a href="<?php echo base_url('CDaftar') ?>">Daftar</a></b></u></P>
+            <P class="daftar">ke halaman <u><b><a href="<?php echo base_url('CDaftar') ?>">Daftar</a></b></u></P>
         </div>
     </form>
 
