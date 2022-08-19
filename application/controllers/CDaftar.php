@@ -9,6 +9,12 @@ class CDaftar extends CI_Controller
     {
         $this->load->view('daftar.php');
     }
+
+    public function daftar_masuk()
+    {
+        $username = $this->input->post('username');
+        $password = $this->input->post('password');
+    }
 }
 
 /* End of file CDaftar.php */

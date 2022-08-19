@@ -170,11 +170,11 @@
             Ya di Shapee aja</p>
     </div>
     <div class="blok-form">
-        <form class="form-daftar">
+        <form class="form-daftar" action="<?php echo base_url('CDaftar/daftar_masuk') ?>">
             <P class="daftar"> Daftar </P>
-            <input class="kolom1" type="text" placeholder="username ..." required="">
-            <input class="kolom1" type="text" placeholder="password ..." required="">
-            <input class="kolom3" type="submit" value="SIMPAN">
+            <input class="kolom1" type="text" name="username" placeholder="username ..." required="">
+            <input class="kolom1" type="text" name="password" placeholder="password ..." required="">
+            <button class="kolom3" type="submit">SIMPAN </button>
 
             <!-- <div class="kolom3">
                 <p class="daftar-button"><b>SIMPAN</b></p>
