@@ -14,6 +14,21 @@ class CDaftar extends CI_Controller
     {
         $username = $this->input->post('username');
         $password = $this->input->post('password');
+
+        $input = array(
+            'username' => $username,
+            'password' => $password
+        );
+        $insert = $this->db->insert('tb_user', $input);
+
+        if ($insert) {
+            echo '<script> alert("SELAMAT! Anda Berhasil Register, Silahkan LOGIN ...");window.location.href="' . base_url('CLogin') . '";</script>';
+        } else {
+            echo "<script> alert('MAAF, Ada Yang Salah')</script>";
+            die(redirect('CDaftar', 'refresh'));
+        }
+
+        // redirect('CDaftar');
     }
 }
 

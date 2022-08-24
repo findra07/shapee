@@ -170,7 +170,7 @@
             Ya di Shapee aja</p>
     </div>
     <div class="blok-form">
-        <form class="form-daftar" action="<?php echo base_url('CDaftar/daftar_masuk') ?>">
+        <form class="form-daftar" action="<?php echo base_url('CDaftar/daftar_masuk') ?>" method="post">
             <P class="daftar"> Daftar </P>
             <input class="kolom1" type="text" name="username" placeholder="username ..." required="">
             <input class="kolom1" type="text" name="password" placeholder="password ..." required="">

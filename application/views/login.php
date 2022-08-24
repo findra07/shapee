@@ -86,9 +86,13 @@
         width: 320px;
         height: 35px;
         border: 1px solid lightblue;
-        margin: auto;
+        margin-left: 40px;
         margin-top: 40px;
         vertical-align: text-top;
+        padding-left: 10px;
+        font-size: 15px;
+        font-family: Maiandra GD;
+        font-style: italic;
     }
 
     .kolom3 {
@@ -96,8 +100,13 @@
         height: 35px;
         border: 1px solid lightblue;
         background-color: lightblue;
-        margin: auto;
+        margin-left: 40px;
         margin-top: 50PX;
+        font-size: 15px;
+        font-family: Maiandra GD;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
     }
 
     .username,
@@ -167,18 +176,14 @@
         <p class="maubelanja"> Mau Belanja Online ? <br>
             Ya di Shapee aja</p>
     </div>
-    <form class="blok-form" action="" method="POST">
+    <form class="blok-form" action="<?php echo base_url('CLogin/login_user') ?>" method="POST">
         <div class="form-login">
             <P class="login"> Log in </P>
-            <div class="kolom1">
-                <p class="username">Username</p>
-            </div>
-            <div class="kolom2">
-                <p class="password">Password</p>
-            </div>
-            <div class="kolom3">
-                <p class="login-button"><b>LOG IN</b></p>
-            </div>
+            <input class="kolom1" type="text" name="userlogin" placeholder="masukkan username ...">
+            <input class="kolom2" type="text" name="passlogin" placeholder="masukkan password ...">
+            <button class="kolom3" type="submit">
+                <b>LOG IN</b>
+            </button>
             <p class="lupa-pass">Lupa Password ? </p>
             <P class="daftar">ke halaman <u><b><a href="<?php echo base_url('CDaftar') ?>">Daftar</a></b></u></P>
         </div>
